@@ -525,14 +525,18 @@
 
                 <div class="form-field">
                     <label for="comment" id="comment"> Комментарий</label>
-                <textarea name="" cols="30" rows="10" id="comment" placeholder="Введите текст"></textarea>
+                <textarea class="textarea" name="" cols="30" rows="10" id="comment" placeholder="Введите текст"></textarea>
                 </div>
                 
 
-                <div class=" checkbox">
-                    <input  type="checkbox" name="" id="policy">
-                <label  for="policy"> Соглашаюсь с рассылкой и принимаю <a href=""><span class="contract-list"> Условия договора</span> </a></label>
-                </div>
+                <div class="checkbox-field">
+                    
+                    <input class="checkbox visually-hidden" type="checkbox" name="" id="policy">
+                    <span class="icon-checkbox"></span>
+                    <label class="checkbox" for="policy"> Соглашаюсь с рассылкой и принимаю 
+                        <span class="contract-list"><a  class="checkbox-link" href=""> Условия договора</a></span></label>
+                
+            </div>
                 
 
                 <button type="submit" class="modal-button">Отправить</button>

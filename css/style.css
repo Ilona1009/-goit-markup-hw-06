@@ -786,6 +786,12 @@ cursor: pointer;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+transition: fill var(--animacia);
+}
+.x-icone:hover,
+.x-icone:focus{
+  fill: var(--accent-color);
+
 }
 
 textarea{
@@ -825,6 +831,7 @@ color: var(--contact-color);
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+cursor: pointer;
 }
 
 .icon-form{
@@ -832,6 +839,8 @@ position: absolute;
 top: 0;
 left: 12px;
 transform: translateY(50%);
+transition: fill var(--animacia), border-color var(--animacia);
+
 }
 
 .form-input:focus ~.icon-form,
@@ -848,28 +857,60 @@ transform: translateY(50%);
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 color: var(--comment);
+cursor: pointer;
+transition: border-color var(--animacia);
+}
+.textarea:hover,
+.textarea:focus{
+  border-color: var(--accent-color);
 }
 
 .form-field label{
 padding-bottom: 4px;
 
 }
+
+.checkbox-field{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
 .checkbox{
- 
+  cursor: pointer;
 }
 
-.checkbox input{
-  margin-right: 9px;
+.icon-checkbox{
+  display: block;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--brand-color);
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.checkbox-link{
+color: var(--accent-color);
+}
+
+.checkbox:checked + .icon-checkbox{
+  background-color: var(--accent-color);
+  border: transparent;
+  background-image: url(../images/icones/icon\ check.svg);
 }
 
 
-
-.contract-list{
+.contract-list {
   color: var(--accent-color);
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
 }
+/* .contract-list > a{
+  text-decoration: 1px  solid var(--accent-color);
+} */
 
 .modal-button{
   background: var(--accent-color);
