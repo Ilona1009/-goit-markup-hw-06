@@ -725,10 +725,7 @@ text-transform: uppercase;
 /* подпишись */
 
 .blok-footer{
-  /* display: flex; */
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
+  margin-left:auto;
 }
 
 .blok-title{
@@ -756,6 +753,7 @@ margin-bottom: 20px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background: var(--footer);
+color: var(--wite-color);
 }
 
 
@@ -818,14 +816,11 @@ position: relative;
   background: var(--wite-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px
   ;
  }
 
  .tittle-modal{
-  position: absolute;
- margin-top: 40px;
-  margin-left: 40px;
-  margin-bottom: 12px;
   font-weight: 700;
 font-size: 20px;
 line-height: calc(23/20);
@@ -840,6 +835,7 @@ height: 30px;
 top: 8px;
 right: 8px;
 border-radius: 50%;
+background: var(--wite-color);
 border: 1px solid var(--border-modal-close);
 cursor: pointer;
 }
@@ -864,14 +860,13 @@ textarea{
 }
 
 .form-modal{
-  width: 448px;
 margin-left: auto;
 margin-right: auto;
-padding: 74px 0;
+
 }
 
 .form-field{
-  /* outline: 1px solid red; */
+
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -880,7 +875,10 @@ padding: 74px 0;
 line-height:calc(14/12);
 letter-spacing: 0.01em;
 color: var(--contact-color);
+}
 
+.form-field-name{
+  margin-top: 12px;
 }
 
 .form-field-inner{
@@ -946,8 +944,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 423px;
-  height: 24px;
+
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -1010,11 +1007,11 @@ color: var(--accent-color);
     color: var(--wite-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: calc(30/16);
     letter-spacing: 0.06em;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    box-shadow: : 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0 transparent;
     border-radius: 4px;
     padding: 10px 32px;
